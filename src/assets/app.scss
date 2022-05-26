@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Gumela.ttf";
+    src: url(./font/Gumela.ttf);
+}
+
+$blue: #0B162C;
+$white: #FFFFFF;
+$green: #5FC2BA;
+$font: Gumela, sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font;
+    font-size: 16px;
+    color: $white;
+    background-color: $blue;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.form__display{
+    margin: 1rem 0;
+
+    input{
+        outline: none;
+        background-color: $blue;
+        color: $green;
+        border: 1px solid $green;
+        padding: 12px;
+        font-family: $font;
+        letter-spacing: 1px;
+    }
+}
+
+.app{
+    min-height: 100vh;
+    padding: .5rem 3rem;
+}
+
+.page__title{
+    margin-top: 1.2rem;
+    color: $green;
+    text-shadow: 12px 12px 12px rgba(0, 0, 0, .6);
+    text-transform: capitalize;
+}
+
+.__page{
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+
+@import './layouts/header';
+@import './layouts/nav';
+@import './layouts/card';
+@import './layouts/content';

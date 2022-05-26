@@ -1,0 +1,45 @@
+.contentModal__landscape{
+    border-radius: 10px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+.content__modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.contentModal__about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+
+    h3{
+        color: $green;
+        margin-bottom: 1rem;
+    }
+
+    .contentModal__description{
+        text-align: justify;
+        width: 90%;
+        margin: 20px auto;
+        line-height: 1.6;
+        overflow-y: scroll;
+    }
+}
+
+
+@media only screen and(max-width: 1097px){
+    .__page{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,22 @@
+.navigation__buttons{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%!important;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $green!important;
+    z-index: 100;
+}
+
+/*Pagination*/
+
+.pagination__display{
+    margin-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
